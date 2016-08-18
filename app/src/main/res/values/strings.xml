@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">도박의 위험성</string>
+    <string name="exit">종료하시겠습니까?</string>
+    <string name="exit2">이대로 끝낸다고??</string>
+</resources>

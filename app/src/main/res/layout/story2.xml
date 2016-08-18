@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="친구1: 야 너 그러다 다 잃지말고 나 밥부터 사주고 해 배고프다\n\n주인공: 에헤이 나 지금 5만원 따온거 안보이냐 삘 왔으니깐 말리지마\n\n친구1: 어휴..."
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:id="@+id/story2_item2"
+        android:gravity="center"
+        android:textSize="7pt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="주인공: 친구야!! 완전 대박이야!! 나 어제 5만원넘게 땃어!!!!\n\n친구1: 나 밥한번 사줘야 되는 각 아니냐\n\n주인공: 야 잔말말고 기달려봐 지금 삘이 왔거든 30만원은 불려온다."
+        android:gravity="center"
+        android:textSize="7pt"
+        android:textColor="#ffffff"
+        android:background="#333333"
+        android:id="@+id/story2_item1" />
+</RelativeLayout>

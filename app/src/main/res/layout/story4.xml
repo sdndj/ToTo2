@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout4">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="친구2: 내가 너 돈안갚는것도 다 신고하고 너 불법도박하는것도 신고할꺼야!!\n\n주인공: 제발 조금만 기달려줘 이번에는 진짜 딸 수 있다고!!\n\n친구2: 넌 지금 도박에 중독됬어..."
+        android:id="@+id/story4_item3"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:textSize="7pt"
+        android:background="#333333"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="친구2: 너 자꾸 그말만 하고 안갚고 있다고!! 차라리 너랑 연을 끊는게 더 빠르겠다.\n\n친구3: 왜그래? 무슨 일 이야?\n\n주인공: ...."
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:id="@+id/story4_item2"
+        android:gravity="center"
+        android:textSize="7pt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="친구2: 야!!! 너 언제까지 내 돈 빌려가고 안갚을꺼야? 다음주에 갚는다면서 벌써 7만원이나 빌려갔어!\n\n주인공: 아.. 내가 2배로 갚는다고 했잖아 좀만 더 기달려줘"
+        android:gravity="center"
+        android:textSize="7pt"
+        android:textColor="#ffffff"
+        android:background="#333333"
+        android:id="@+id/story4_item1" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="주인공: 친구2야! 너 얼마있어? 나 만원만 빌려주라 다음주에 2배로 갚을께\n\n친구2: 음... 그래 알겠어 다음주에 꼭 2배로 갚아라!!\n\n주인공: 당연하지 ㅎㅎ"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:id="@+id/story3_item2"
+        android:gravity="center"
+        android:textSize="7pt"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="친구1: 너 안색이 안좋아 보인다? 무슨일 있어??\n\n주인공: 어..어? 아니야 야 내가 다음주에 꼭 밥사줄께 기달려\n\n친구1: (다 잃었구만...)"
+        android:gravity="center"
+        android:textSize="7pt"
+        android:textColor="#ffffff"
+        android:background="#333333"
+        android:id="@+id/story3_item1" />
+</RelativeLayout>

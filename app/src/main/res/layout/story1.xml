@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="주인공: 그래? 뭐.. 요즘 용돈도 부족하니 들어나 볼까\n\n친구1: 여기 사이트 들어가서...(열심히 설명중)\n\n주인공: 오 됬다! 이 돈으로 하면 되는거야??\n\n친구1: 응응 한번 잘해봐~ 많이 따면 나좀 사주고 ㅎㅎ"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:id="@+id/story1_item4" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="친구1: 이거봐바 이게 홀짝 도박이라는건데...\n\n주인공: 아 뭐야! 도박이잖아 난 도박안해\n\n친구1: 야야 이거는 그런거랑 다르다고 요즘 학생들이 많이하는거 몰라?"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:id="@+id/story1_item3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="주인공: 너 돈이 어디서 나서 이런것도 사주냐??\n\n친구1: ㅋㅋ 너 왕따냐? 우리반에서 이거 모르는거 너밖에 없을듯\n\n주인공: 음??"
+        android:background="#333333"
+        android:textColor="#ffffff"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:id="@+id/story1_item2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="(상황과 인물은 모두 픽션입니다.)\n\n친구1: 인공아! 내가 오늘 치킨쏜다 가자!!\n\n주인공: 엥? 너가 왠일이야 나한테 먹을것도 사주고"
+        android:textColor="#ffffff"
+        android:textSize="7pt"
+        android:background="#333333"
+        android:gravity="center"
+        android:id="@+id/story1_item1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="화면을 터치해주세요!"
+        android:id="@+id/textView5"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
