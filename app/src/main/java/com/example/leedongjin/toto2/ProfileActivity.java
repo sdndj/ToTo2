@@ -45,6 +45,7 @@ public class ProfileActivity extends Activity implements View.OnClickListener {
         img_number = sharedPreferences.getInt("image_key", img_number);
     }
 
+    // 스토리 진행에 따라 프로필 사진을 바꿔준다.
     private void ImageChange(int a) {
         switch (a) {
             case 0:
