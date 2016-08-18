@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
@@ -40,6 +41,7 @@ public class Main extends Activity implements View.OnClickListener {
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
         load();
+        Log.d("aaaaaaaaaaaaaaaa", String.valueOf(a));
     }
 
     @Override

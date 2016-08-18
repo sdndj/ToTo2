@@ -240,6 +240,7 @@ public class Game_Story3_Activity extends AppCompatActivity implements View.OnCl
         reset_scores = sharedPreferences.getInt("Scores",reset_scores);
     }
 
+    //돈 빌린 횟수를 체크하여 7번 이상이면 다음 스토리로 넘어간다.
     private void score_check() {
         if(reset_scores >= 7){
             startActivity(new Intent(this, Story4Activity.class));

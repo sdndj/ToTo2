@@ -18,9 +18,11 @@ public class ProfileActivity extends Activity implements View.OnClickListener {
 
     Button replay, start, option;
     ImageView profile;
-    int img_number=0;
+    int img_number = 0;     //프로필 이미지를 각 스토리마다 바꾸기 위한 변수
+    int a = 0, money = 10000;       //값 초기화 변수
 
     SharedPreferences sharedPreferences;
+    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +46,7 @@ public class ProfileActivity extends Activity implements View.OnClickListener {
     }
 
     private void ImageChange(int a) {
-        switch (a){
+        switch (a) {
             case 0:
                 profile.setBackgroundResource(R.mipmap.character_happy);
                 break;
@@ -86,27 +88,27 @@ public class ProfileActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.story_replay_btn: //스토리 다시보기
-                switch (img_number){ //각 프로필 사진마다 게임 규칙과 스토리가 바뀌기 때문에 그에 맞게 버튼을 클릭 할 수 있어야함.
-                    case 0: //스토리 1
+                switch (img_number) { //각 프로필 사진마다 게임 규칙과 스토리가 바뀌기 때문에 그에 맞게 버튼을 클릭 할 수 있어야함.
+                    case 0:     //스토리 1
                         startActivity(new Intent(this, Story1Activity.class));
                         finish();
                         break;
-                    case 1: //스토리 2
+                    case 1:     //스토리 2
                         startActivity(new Intent(this, Story2Activity.class));
                         finish();
                         break;
-                    case 2:
+                    case 2:     //스토리 3
                         startActivity(new Intent(this, Story3Activity.class));
                         finish();
                         break;
-                    case 3:
+                    case 3:     //스토리 4
                         startActivity(new Intent(this, Story4Activity.class));
                         finish();
                         break;
                 }
                 break;
             case R.id.game_start_btn:
-                switch (img_number){
+                switch (img_number) {
                     case 0: //스토리 1
                         startActivity(new Intent(this, Game_Story1_Activity.class));
                         finish();
@@ -133,15 +135,38 @@ public class ProfileActivity extends Activity implements View.OnClickListener {
     //게임이 끝났다는걸 알리는 다이얼로그
     private void DialogView() {
         AlertDialog.Builder ab = new AlertDialog.Builder(ProfileActivity.this);
-        ab.setMessage("Game Over");
-        ab.setPositiveButton("확인",null);
-        ab.show();
+        ab.setMessage("스토리가 끝났습니다. 초기화를 하시겠습니까?")
+                .setPositiveButton(this.getString(android.R.string.yes), //승인버튼을 눌렀을때
+                        new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                img_number = 0;
+                                reset();
+                                startActivity(new Intent(ProfileActivity.this, Main.class));
+                                finish();
+                            }
+                        }
+                ).setNegativeButton(this.getString(android.R.string.no), null).show(); //취소버튼을 눌렀을때
     }
+
+    //게임에 저장된 데이터 초기화
+    private void reset() {
+        sharedPreferences = getSharedPreferences("number", 0);
+        editor = sharedPreferences.edit();
+        editor.putInt("a", a);
+        editor.commit();
+        sharedPreferences = getSharedPreferences("money", 0);
+        editor = sharedPreferences.edit();
+        editor.putInt("inputmoney",money);
+        editor.putInt("Scores",a);
+        editor.commit();
+    }
+
     //옵션 다이얼로그
-    private void Dialog_option(){
+    private void Dialog_option() {
         AlertDialog.Builder ab = new AlertDialog.Builder(ProfileActivity.this);
         ab.setMessage("아직 준비중이에요~");
-        ab.setPositiveButton("확인",null);
+        ab.setPositiveButton("확인", null);
         ab.show();
     }
 }
