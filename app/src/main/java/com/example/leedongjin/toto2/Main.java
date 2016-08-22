@@ -41,7 +41,6 @@ public class Main extends Activity implements View.OnClickListener {
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
         load();
-        Log.d("aaaaaaaaaaaaaaaa", String.valueOf(a));
     }
 
     @Override
